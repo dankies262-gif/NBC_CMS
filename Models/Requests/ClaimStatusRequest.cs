@@ -2,13 +2,13 @@
 
 namespace NBC_CMS.Requests
 {
-    public class ProgrammeRequest
+    public class ClaimStatusRequest
     {
         [Required]
-        [MaxLength(200)]
-        public string programmeName { get; set; } = string.Empty;
+        [MaxLength(100)]
+        public string statusName { get; set; } = string.Empty;
 
-        [MaxLength(500)]
+        [MaxLength(255)]
         public string? description { get; set; }
     }
 }

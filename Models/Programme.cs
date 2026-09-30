@@ -10,7 +10,7 @@ namespace NBC_CMS.Models
         public int programmeID { get; set; }
 
         [Required]
-        [MaxLength(150)]
+        [MaxLength(200)]
         public string programmeName { get; set; } = string.Empty;
 
         public string? description { get; set; }
