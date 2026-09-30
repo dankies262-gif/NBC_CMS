@@ -29,7 +29,19 @@ builder.Services.AddCors(options =>
 });
 // User Service
 builder.Services.AddScoped<IUserService, UserService>();
+
+// Programme Service
+builder.Services.AddScoped<ProgrammeService>();
+
+// Claim Correction Service
+builder.Services.AddScoped<ClaimCorrectionService>();
+
+// Claim Status Service
+builder.Services.AddScoped<ClaimStatusService>();
+
 var app = builder.Build();
+
+
 
 // Swagger
 if (app.Environment.IsDevelopment())

@@ -12,7 +12,11 @@ namespace NBC_CMS.Data
         }
         public DbSet<UserRole> UserRoles { get; set; }
         public DbSet<User> Users { get; set; }
-     
-        
+        public DbSet<Programme> Programmes { get; set; }
+        public DbSet<ClaimCorrection> ClaimCorrections { get; set; }
+
+        public DbSet<ClaimStatus> ClaimStatuses { get; set; }
+
+
     }
 }
